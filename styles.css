@@ -1,0 +1,259 @@
+:root {
+    --theme-color-one: #025ba0;
+    --theme-color-two: #9bc72b;
+    --theme-color-three: #f0c517;
+    --theme-color-four: #bf1724;
+    --theme-color-five: #5cc9f4;
+    --white: #fff;
+    --black: #000;
+    --grey: #999;
+}
+
+body {
+    font-family: 'Bungee Shade', cursive;
+    background-color: #004953;
+    color: var(--white);
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.light-bulbs {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.light-bulb {
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+}
+
+.light-bulb.theme-color-one {
+    background: var(--theme-color-one);
+}
+
+.light-bulb.theme-color-two {
+    background: var(--theme-color-two);
+}
+
+.light-bulb.theme-color-three {
+    background: var(--theme-color-three);
+}
+
+.light-bulb.theme-color-four {
+    background: var(--theme-color-four);
+}
+
+.light-bulb.theme-color-five {
+    background: var(--theme-color-five);
+}
+
+@keyframes light-up-theme-color-one {
+    0% {
+        box-shadow: 0 1px 10px 5px var(--theme-color-one);
+    }
+    25% {
+        box-shadow: 0 1px 15px 5px var(--theme-color-one);
+    }
+    50% {
+        box-shadow: 0 1px 20px 5px var(--theme-color-one);
+    }
+    75% {
+        box-shadow: 0 1px 25px 5px var(--theme-color-one);
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes light-up-theme-color-two {
+    0% {
+        box-shadow: 0 1px 10px 5px var(--theme-color-two);
+    }
+    25% {
+        box-shadow: 0 1px 15px 5px var(--theme-color-two);
+    }
+    50% {
+        box-shadow: 0 1px 20px 5px var(--theme-color-two);
+    }
+    75% {
+        box-shadow: 0 1px 25px 5px var(--theme-color-two);
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes light-up-theme-color-three {
+    0% {
+        box-shadow: 0 1px 10px 5px var(--theme-color-three);
+    }
+    25% {
+        box-shadow: 0 1px 15px 5px var(--theme-color-three);
+    }
+    50% {
+        box-shadow: 0 1px 20px 5px var(--theme-color-three);
+    }
+    75% {
+        box-shadow: 0 1px 25px 5px var(--theme-color-three);
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes light-up-theme-color-four {
+    0% {
+        box-shadow: 0 1px 10px 5px var(--theme-color-four);
+    }
+    25% {
+        box-shadow: 0 1px 15px 5px var(--theme-color-four);
+    }
+    50% {
+        box-shadow: 0 1px 20px 5px var(--theme-color-four);
+    }
+    75% {
+        box-shadow: 0 1px 25px 5px var(--theme-color-four);
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes light-up-theme-color-five {
+    0% {
+        box-shadow: 0 1px 10px 5px var(--theme-color-five);
+    }
+    25% {
+        box-shadow: 0 1px 15px 5px var(--theme-color-five);
+    }
+    50% {
+        box-shadow: 0 1px 20px 5px var(--theme-color-five);
+    }
+    75% {
+        box-shadow: 0 1px 25px 5px var(--theme-color-five);
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+.light-bulb {
+    /* prior styles go here */
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite;
+}
+
+.light-bulb.theme-color-one {
+    animation-name: light-up-theme-color-one;
+}
+
+.light-bulb.light-bulb.theme-color-two {
+    animation-name: light-up-theme-color-two;
+}
+
+.light-bulb.light-bulb.theme-color-three {
+    animation-name: light-up-theme-color-three;
+}
+
+.light-bulb.light-bulb.theme-color-four {
+    animation-name: light-up-theme-color-four;
+}
+
+.light-bulb.light-bulb.theme-color-five {
+    animation-name: light-up-theme-color-five;
+}
+
+.play-game-button {
+    background-color: #004A7F;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    text-align: center !important;
+    -webkit-animation: glowing 1500ms infinite;
+    -moz-animation: glowing 1500ms infinite;
+    -o-animation: glowing 1500ms infinite;
+    animation: glowing 1500ms infinite;
+}
+
+@-webkit-keyframes glowing {
+    0% {
+        background-color: #32cd32;
+        -webkit-box-shadow: 0 0 3px #32cd32;
+    }
+    50% {
+        background-color: #FF0000;
+        -webkit-box-shadow: 0 0 40px #FF0000;
+    }
+    100% {
+        background-color: #32cd32;
+        -webkit-box-shadow: 0 0 3px #32cd32;
+    }
+}
+
+@-moz-keyframes glowing {
+    0% {
+        background-color: #32cd32;
+        -moz-box-shadow: 0 0 3px #32cd32;
+    }
+    50% {
+        background-color: #FF0000;
+        -moz-box-shadow: 0 0 40px #FF0000;
+    }
+    100% {
+        background-color: #32cd32;
+        -moz-box-shadow: 0 0 3px #32cd32;
+    }
+}
+
+@-o-keyframes glowing {
+    0% {
+        background-color: #32cd32;
+        box-shadow: 0 0 3px #32cd32;
+    }
+    50% {
+        background-color: #FF0000;
+        box-shadow: 0 0 40px #FF0000;
+    }
+    100% {
+        background-color: #32cd32;
+        box-shadow: 0 0 3px #32cd32;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        background-color: #32cd32;
+        box-shadow: 0 0 3px #32cd32;
+    }
+    50% {
+        background-color: #FF0000;
+        box-shadow: 0 0 40px #FF0000;
+    }
+    100% {
+        background-color: #32cd32;
+        box-shadow: 0 0 3px #32cd32;
+    }
+}
+
+.game-image {
+    height: 15rem;
+    width: auto;
+    padding: 2rem;
+    border-radius: 50px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
